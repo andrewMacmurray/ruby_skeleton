@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+# Allows you to require any file in lib
+$: << File.join(File.dirname(__FILE__), '..', 'lib')
+
+# Require files here to experiment with them in an irb session
+
+require "irb"
+IRB.start(__FILE__)
